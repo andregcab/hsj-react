@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import("./userhomepage.css");
+import "./userhomepage.css";
 
 class UserHomepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userJumps: []
+      userJumps: [],
     };
   }
 
@@ -15,10 +15,10 @@ class UserHomepage extends Component {
     // console.log(`${process.env.REACT_APP_BASE}/jump/userJumps/${id}`);
     axios
       .get(`${process.env.REACT_APP_BASE}/jump/userJumps/${id}`)
-      .then(allTheJumps => {
+      .then((allTheJumps) => {
         this.setState({ userJumps: allTheJumps.data });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -30,8 +30,7 @@ class UserHomepage extends Component {
   }
 
   showAllUserJumps = () => {
-    return this.state.userJumps.map(eachJump => {
-
+    return this.state.userJumps.map((eachJump) => {
       return (
         <div key={eachJump._id} className="card eachUserCard large">
           <img src={eachJump.image} className="card-img-top" alt="..." />
@@ -56,11 +55,10 @@ class UserHomepage extends Component {
     });
   };
 
-
   getTotalUserSkips() {
     let totalUserSkips = 0;
     let theJumps = this.state.userJumps;
-    theJumps.forEach(eachJump => {
+    theJumps.forEach((eachJump) => {
       return (totalUserSkips += eachJump.skip.length);
     });
     return totalUserSkips;
@@ -73,7 +71,6 @@ class UserHomepage extends Component {
   render() {
     return (
       <div className="userHome center-align">
-        
         <div className="userLinks">
           <Link to="/createJump">CREATE A NEW JUMP</Link>
           <Link to="/allJumps">ALL JUMPS</Link>
@@ -82,7 +79,7 @@ class UserHomepage extends Component {
         <hr />
 
         <p>Travler {this.props.theUser.username}</p>
-       
+
         <div className="lifeTime">
           <p> {this.getTotalUserJumps()} lifetime Jumps</p>
           <hr />

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import axios from "axios";
 // import Hop from "../createhop/CreateHop.js";
 // import CreateSkip from "../createskip/CreateSkip.js";
-import("./createjump.css");
+import "./createjump.css";
 
 class CreateJump extends Component {
   constructor(props) {
@@ -15,11 +15,11 @@ class CreateJump extends Component {
       newDescription: "",
       createSkipVisible: false,
       createHopVisible: false,
-      newImage: null
+      newImage: null,
     };
   }
 
-  handleFormSubmit = event => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
 
     let newJump = new FormData();
@@ -32,11 +32,11 @@ class CreateJump extends Component {
     axios
       .post(`${process.env.REACT_APP_BASE}/jump/newJump`, newJump, {
         headers: {
-          "Content-Type": "multipart/form-data"
+          "Content-Type": "multipart/form-data",
         },
-        withCredentials: true
+        withCredentials: true,
       })
-      .then(theCreatedJump => {
+      .then((theCreatedJump) => {
         this.props.history.push("/viewJump/" + theCreatedJump.data._id);
         // this.props.getData();
         //this function updates something
@@ -44,21 +44,19 @@ class CreateJump extends Component {
           newStart: "",
           newEnd: "",
           newDuration: 0,
-          newDescription: ""
+          newDescription: "",
         });
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   };
 
-  
-
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
     // console.log(this.state)
   };
 
-  updateFileInState = e => {
+  updateFileInState = (e) => {
     this.setState({ newImage: e.target.files[0] });
   };
 
@@ -86,7 +84,7 @@ class CreateJump extends Component {
                 className="validate"
                 name="newStart"
                 value={this.state.newStart}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 required
               />
               <label htmlFor="icon_plane">City of departure</label>
@@ -102,7 +100,7 @@ class CreateJump extends Component {
                 className="validate"
                 name="newEnd"
                 value={this.state.newEnd}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 required
               />
               <label htmlFor="icon_plane2">City of arrival </label>
@@ -115,7 +113,7 @@ class CreateJump extends Component {
                 className="validate"
                 name="newDuration"
                 value={this.state.newDuration}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 required
               />
               <label htmlFor="duration">Duration (in days)</label>
@@ -127,22 +125,23 @@ class CreateJump extends Component {
                 className="materialize-textarea"
                 name="newDescription"
                 value={this.state.newDescription}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 required
               />
               <label htmlFor="textarea1">Description</label>
             </div>
-    
-              <div className="buttonsCenter">
-            {/* <div className="input-field col s12"> */}
-            <div className="file-field input-field">
-              <legend className="addImage" style={{ marginTop: "20px" }}>Add a Picture</legend>
-              <input type="file" onChange={this.updateFileInState} />
+
+            <div className="buttonsCenter">
+              {/* <div className="input-field col s12"> */}
+              <div className="file-field input-field">
+                <legend className="addImage" style={{ marginTop: "20px" }}>
+                  Add a Picture
+                </legend>
+                <input type="file" onChange={this.updateFileInState} />
               </div>
-            {/* </div> */}
-            <button className="btn createJumpBtn">Create Jump</button>
+              {/* </div> */}
+              <button className="btn createJumpBtn">Create Jump</button>
             </div>
-            
           </form>
         </div>
 
@@ -156,7 +155,7 @@ class CreateJump extends Component {
             {this.state.createSkipVisible ? <CreateSkip /> : null}
           </div> */}
 
-          {/* <div>
+        {/* <div>
             <button className="btn-floating btn-small  black"><i className="material-icons"  onClick={() => this.onClick()}>add</i></button>
             {this.state.createSkipVisible ? <CreateSkip/>: null}
             </div> */}

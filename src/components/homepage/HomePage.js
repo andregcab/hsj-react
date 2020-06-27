@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import("./homepage.css");
+import "./homepage.css";
 
 class HomePage extends Component {
   constructor(props) {
@@ -13,8 +13,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <header id="navOverlay" className="navHeader">
-        </header>
+        <header id="navOverlay" className="navHeader"></header>
 
         <div className="description">
           <h3>What is HSJ?</h3>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AuthService from "../../services/AuthService";
 import "materialize-css";
 import { Modal, Button } from "react-materialize";
-import("./login.css");
+import "./login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -11,11 +11,11 @@ class Login extends Component {
     this.service = new AuthService();
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  tryToLogin = e => {
+  tryToLogin = (e) => {
     e.preventDefault();
     const uName = this.state.usernameInput;
     const pWord = this.state.passwordInput;
