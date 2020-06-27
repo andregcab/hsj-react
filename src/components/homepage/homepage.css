@@ -1,0 +1,262 @@
+@import url("https://use.typekit.net/wlf2zut.css");
+
+.navHeader{
+  background-image: url('/images/HSJHeader2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.carousel{
+  /* margin-left: 300px; */
+   width: 100vw !important;
+  margin-bottom: 0px;
+  /* margin-left: 1px !important; */
+  margin-top: 1px !important;
+  height: 1120px !important;
+}
+
+#test9 {
+ margin-left: -1px !important;
+}
+
+
+.slider-wrapper{
+  height: 1130px !important;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+.description h3{
+  font-size: 6em;
+}
+
+.description p{
+  width: 800px;
+  font-size: 1.3em;
+  line-height: 35px;
+  letter-spacing: 1.1px;
+}
+
+.allj{
+  color: green;
+}
+
+#getStarted{
+  margin-top: 50px;
+  text-align: center;
+} 
+
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #383838;
+  color: rgb(212, 211, 211);
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-info {
+  margin-left: 20px;
+}
+
+#footer-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  width: 250px;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: rgb(223, 223, 213);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  width: 250px;
+  padding: 5px;
+}
+
+
+@media only screen and (max-width: 300px){
+  .navHeader {
+  height: 412px;
+  width: 561px;
+  }
+
+  .description p {
+    width: 430px;
+    font-size: 1.3em;
+    line-height: 35px;
+    letter-spacing: 1.1px;
+  }
+
+  .description{
+    margin-left: 260px;
+    text-align: center;
+  }
+
+  .description h3 {
+    font-size: 31px;
+    margin: 20px -60px;
+  }
+
+  .carousel{
+      display: none;
+  }
+
+  footer{
+    width: 560px;
+  }
+
+  #footer-links a {
+    width: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  .navHeader {
+  height: 412px;
+  width: 561px;
+  }
+
+  .description p {
+    width: 430px;
+    font-size: 1.3em;
+    line-height: 35px;
+    letter-spacing: 1.1px;
+  }
+
+  .description{
+    margin-left: 260px;
+    text-align: center;
+  }
+
+  .description h3 {
+    font-size: 31px;
+    margin: 20px -60px;
+  }
+
+  .carousel{
+      display: none;
+  }
+
+  footer{
+    width: 560px;
+  }
+
+  #footer-links a {
+    width: 150px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .description p {
+        width: 300px;
+    }
+    
+    .description h3 {
+      font-size: 31px;
+      margin: 20px -60px;
+    }
+
+    .description{
+      margin-left: 173px;
+      text-align: center;
+    }
+
+    .carousel{
+      display: none;
+    }
+
+   .navHeader {
+    height: 412px;
+    width: 561px;
+    }
+
+    footer{
+      width: 565px;
+    }
+  
+    #footer-links a {
+      width: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+  .navHeader {
+   height: 542px;
+   width: 805px;
+  }
+
+  .description p {
+    width: 650px;
+  }
+
+  .description h3 {
+    font-size: 31px;
+    margin: 20px -60px;
+  }
+
+  .description{
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .carousel{
+    display: none;
+  }
+
+  footer{
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .navHeader {
+    height: 731px;
+    width: 1019px;
+ }
+ 
+   .description p {
+     width: 480px;
+   }
+ 
+   .description h3 {
+    font-size: 58px;
+    margin: 41px -317px;
+  }
+ 
+   .description{
+     margin-left: 500px;
+     text-align: center;
+   }
+ 
+   .carousel{
+    display: none;
+  }
+ 
+   footer{
+    width: 1034px;
+    margin-top: 312px;
+   }
+  }

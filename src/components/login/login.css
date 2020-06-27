@@ -1,0 +1,81 @@
+/* Login Modal */
+.input-field{
+  width: 650px !important;
+}
+
+.loginBtn{
+  background-color: transparent !important;
+  border-radius: 12px !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.accountLogin{
+  background-color: #4CAF50 !important ;
+  border-radius: 12px !important;
+  color: white !important;
+  margin-left: 300px !important;
+}
+
+#loginModal {
+  background-image: url('/images/modalImage.jpeg') !important;
+  background-size: cover;
+}
+
+#loginModal h5{
+  text-align: center !important;
+  color: black !important;
+}
+
+#loginModal > .modal-footer {
+  background-color:transparent !important;
+}
+
+.login-input-field input[type=text] + label {
+  color: #000 !important;
+}
+.login-input-field input[type=text]:focus {
+  border-bottom: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+.login-input-field input[type=password] + label {
+  color: #000 !important;
+}
+.login-input-field input[type=text]:focus + label {
+  color:black !important;
+}
+
+.login-input-field input[type=password]:focus {
+  border-bottom: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+.login-input-field input[type=password]:focus + label {
+  color: black !important;
+}
+
+.login-input-field .prefix.active {
+  color: black !important;
+}
+
+.login-input-field .prefix {
+  color: black !important;
+}
+
+#loginModal .waves-effect{
+  display: none !important;
+}
+#loginModal > .modal-content {
+  padding: 64px !important;
+  margin-top: 60px !important;
+}
+
+#loginModal{
+  max-height: 80% !important;
+}
+
+.loginBtn:hover{
+  background-color: #4CAF50 !important;
+  color: white !important;
+}

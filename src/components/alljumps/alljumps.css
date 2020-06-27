@@ -1,0 +1,69 @@
+.allUserJumpsCard{
+  margin-left: 25px !important;
+  width: 25rem !important;
+}
+
+.allCards{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.card-img-top{
+  width: 100% !important;
+}
+.card-body{
+  text-align: center;
+}
+
+.allCards {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  margin-top: 80px !important;
+  padding: 12px 110px !important;
+ }
+
+ .card-action{
+  text-align: center;
+}
+
+.homelink{
+  color:  #4CAF50 !important;;
+}
+
+
+@media only screen and (max-width: 300px){
+  .allUserJumpsCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+   .allCards {
+    padding: 0px 0px !important;
+ }
+ 
+}
+
+@media only screen and (max-width: 400px){
+  .allUserJumpsCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+   .allCards {
+    padding: 0px 0px !important;
+ }
+    
+}
+
+@media only screen and (max-width: 500px){
+  .allUserJumpsCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+   .allCards {
+    padding: 0px 0px !important;
+ }
+ 
+}
+
+

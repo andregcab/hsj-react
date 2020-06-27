@@ -1,0 +1,72 @@
+.signUpBtn{
+  background-color: transparent !important;
+  border-radius: 12px !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+
+
+.accountSignupBtn{
+  background-color: #4CAF50 !important;
+  border-radius: 12px !important;
+  color: white !important;
+  margin-left: 300px !important;
+}
+
+#signUp > .modal{
+  max-height: 150%;
+}
+
+#signUp{
+  background-image: url('/images/modalImage.jpeg') !important;
+  background-size: cover;
+}
+
+#signUp h5{
+  text-align: center;
+}
+
+#signUp > .modal-content {
+  padding: 64px !important;
+  margin-top: 63px !important;
+}
+
+
+.lsignUpInput input[type=text] + label {
+  color: #000 !important;
+}
+.signUpInput input[type=text]:focus {
+  border-bottom: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+.signUpInput input[type=password] + label {
+  color: #000 !important;
+}
+.signUpInput input[type=text]:focus + label {
+  color:black !important;
+}
+
+.signUpInput input[type=password]:focus {
+  border-bottom: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+.signUpInput input[type=password]:focus + label {
+  color: black !important;
+}
+
+.signUpInput .prefix.active {
+  color: black !important;
+}
+
+.lsignUpInput .prefix {
+  color: black !important;
+}
+
+
+.signUpBtn:hover{
+  background-color: #4CAF50 !important ;
+  color: white !important;
+}

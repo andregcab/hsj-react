@@ -1,0 +1,23 @@
+.eachSkipsHop {
+  border-top: 1px solid #4caf50;
+  border-left: 1px solid #4caf50;
+  border-right: 1px solid #4caf50;
+  width: 484px;
+  margin-left: -4px;
+  margin-top: 55px;
+  margin-bottom: 100px;
+}
+
+.editHopLocation{
+  /* color: #4caf50 !important; */
+  color: black !important;
+}
+
+.deleteHop{
+  /* color: #4caf50 !important; */
+  color: black !important;
+}
+
+.card.small {
+  height: 250px !important;
+}

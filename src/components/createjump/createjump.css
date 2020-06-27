@@ -1,0 +1,113 @@
+.createJump{
+    background-image: url(/images/modalImage.jpeg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+.move {
+  margin-top: -450px;
+ display: flex;
+ justify-content: center;
+ margin-left: 100px;
+}
+
+.createJumpInput{
+  width: 900px !important;
+}
+
+#plane {
+  transform: rotate(90deg);
+  margin-top: 15px;
+}
+
+.addButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.addButtons button{
+ margin-right: 12px;
+}
+
+.buttonAlign {
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.addImage{
+  margin-left: 23px;
+  border: 1px solid  #4CAF50;
+  border-radius: 12px;
+  padding: 5px 5px;
+  /* background-color: #4CAF50 !important; */
+  color: black;
+}
+
+.createJumpBtn{
+  background-color: #4CAF50 !important;
+}
+
+.buttonsCenter{
+  margin-left: 400px;
+}
+
+@media only screen and (max-width: 300px){
+  .createJump {
+      width: 1020px;
+  } 
+  .move {
+    margin-top: -507px;
+    display: flex;
+    justify-content: center;
+    margin-left: 580px;
+  }
+
+  .createJumpInput{
+    width: 700px !important;
+  }
+  .buttonsCenter {
+    margin-left: 230px;
+}
+}
+
+@media only screen and (max-width: 400px){
+  .createJump {
+    width: 1020px;
+   } 
+
+   .move {
+    margin-top: -507px;
+    display: flex;
+    justify-content: center;
+    margin-left: 580px;
+  }
+  .createJumpInput{
+    width: 700px !important;
+  }
+  .buttonsCenter {
+    margin-left: 230px;
+}
+}
+
+@media only screen and (max-width: 500px){
+  .createJump {
+    width: 1020px;
+  } 
+
+  .createJumpInput{
+    width: 700px !important;
+  }
+
+  .move {
+    margin-top: -507px;
+    display: flex;
+    justify-content: center;
+    margin-left: 580px;
+  }
+  .buttonsCenter {
+    margin-left: 230px;
+}
+}
+
+ 

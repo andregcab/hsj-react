@@ -1,0 +1,35 @@
+.editSkipContent{
+  background-image: url(/images/modalImage.jpeg);
+  background-size: cover;
+  height: 700px;
+}
+
+
+
+.editSkip button{
+  margin-bottom: 12px;
+}
+
+#plane {
+  transform: rotate(90deg);
+  margin-top: 15px;
+}
+
+.editSkipForm{
+  padding: 140px 310px;
+}
+
+.editSkipForm h3{
+  text-align: center;
+}
+
+.saveEditSkip{
+  background-color: #4caf50 !important;
+  margin-left:  300px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default),textarea.materialize-textarea,input[type=number]:not(.browser-default){
+  border-bottom: 1px solid #bbb !important;
+  box-shadow: 0 1px 0 0 #bbb !important;
+}
+

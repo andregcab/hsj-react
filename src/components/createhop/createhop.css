@@ -1,0 +1,58 @@
+.createHopModal {
+  background-image: url('/images/modalImage.jpeg');
+  background-size: cover !important;
+  max-height: 90% !important;
+  width: 80% !important;
+}
+
+.createHopModal h3{
+   text-align: center;
+}
+
+.createHopContent{
+  padding: 106px 230px !important;
+}
+
+.addHop{
+  margin-left: 250px;
+  background-color: #4CAF50 !important;
+}
+.createHop-input-field input[type=text]:focus {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+  /* valid color */
+  .createHop-input-field input[type=text].valid {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0  #4caf50 !important;
+}
+/* invalid color */
+.createHop-input-field input[type=text].invalid {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 #000;
+}
+  /* label focus color */
+  .createHop-input-field input[type=text]:focus + label {
+  color: #4caf50 !important;
+}
+
+/* label underline focus color */
+.createHop-input-field input[type=text]:focus {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+
+.materialize-textarea:focus {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4CAF50 !important;
+}
+
+.materialize-textarea:focus + label{
+  color: #4CAF50 !important;
+}
+
+.createNewHopBtn{
+  background-color: #4CAF50 !important;
+}

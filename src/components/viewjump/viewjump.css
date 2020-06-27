@@ -1,0 +1,104 @@
+.boxStuff {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.skipTitle{
+  text-align: center;
+}
+.oneJumpImage{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.oneJumpImage img {
+  width: 90%;
+  height: 100%;
+}
+
+.ifNoSkips{
+  text-align: center;
+}
+
+.oneJumpImage{
+  border-right: 1px solid green;
+  width: 500px;
+}
+
+.jumpInOut {
+  display: flex;
+  flex-direction: column;
+  width: 861px;
+}
+
+.oneJumpPlane{
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  color:#4caf50 !important;
+  font-size: 35px !important;
+}
+
+.editJumpLocation{
+  font-size: 30px !important;
+}
+.editJumpBtn {
+  /* background-color: #4caf50 !important; */
+  text-align: center;
+  color: #4caf50;
+  width: 112px;
+  padding: 4px;
+  border-radius: 3px;
+  margin-top: 100px;
+  margin-left: 555px;
+}
+
+.deleteJump{
+  color: #4caf50 !important;
+  font-size: 30px !important;
+}
+
+.buttonHolder{
+  display: flex;
+  justify-content: center;
+}
+
+.titlePlane{
+  color: #4caf50 !important;
+  font-size: 55px !important;
+}
+
+.jumpTitle {
+  margin-top: 70px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.goUp{
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  background-color: #4caf50 !important;
+}
+
+.goUp a{
+  color: white !important;
+}
+
+
+.jumpInOut {
+  display: flex;
+  flex-direction: column;
+  width: 1041px;
+  }
+
+
+  /* @media only screen and (max-width: 300px){
+    .mapContainer{
+      width: 1040px;
+    }
+  }
+   */

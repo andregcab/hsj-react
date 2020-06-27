@@ -1,0 +1,108 @@
+@import url("https://use.typekit.net/wlf2zut.css");
+
+.userHome{
+  margin-top: 50px;
+}
+
+.userLinks{
+  display: flex;
+  justify-content: center;
+}
+
+.userLinks a{
+  color: black;
+  margin-right: 12px;
+}
+.userLinks a:hover{
+  color: blue;
+}
+
+hr{ 
+  height: 0px !important;
+  color: #bbb !important;
+  background-color: #bbb !important;
+  width: 65%;
+}
+
+.userHome p {
+  text-align: center !important;
+  margin-top: 1px !;
+}
+
+
+.allUserCards{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.eachUserCard{
+  margin-left: 25px !important;
+  width: 25rem !important;
+}
+
+.card-img-top{
+  height: 50% !important;
+}
+
+.card-text{
+  margin: 1px 35px;
+}
+
+.lifeTime{
+ display: flex;
+ padding: 20px 350px;
+}
+
+.lifeTime p {
+  font-family: relation-two, sans-serif;
+  font-size: 20px;
+  margin-top: -5px;
+  color: #4CAF50;
+}
+
+.cardPlane{
+  color: #4CAF50 !important;
+  font-size: 16px !important;
+}
+
+.card-action{
+  text-align: center;
+}
+
+.homelink{
+  color:  #4CAF50 !important;;
+}
+
+@media only screen and (max-width: 300px){
+  .eachUserCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+  .lifeTime {
+    display: flex;
+    padding: 0px 0px;
+ } 
+}
+
+@media only screen and (max-width: 400px){
+  .eachUserCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+  .lifeTime {
+    display: flex;
+    padding: 0px 0px;
+ }  
+}
+
+@media only screen and (max-width: 500px){
+  .eachUserCard{
+    margin: 0px 0px 0px 0px ;
+    /* width: 50rem !important; */
+   }
+  .lifeTime {
+    display: flex;
+    padding: 0px 0px;
+ } 
+}

@@ -1,0 +1,18 @@
+.editHop{
+  background-image: url(/images/modalImage.jpeg);
+  background-size: cover;
+  height: 700px;
+}
+
+.editHopContent{
+  padding: 140px 310px;
+}
+
+.editHopContent h3{
+  text-align: center;
+}
+
+.saveEditHop{
+  background-color: #4caf50 !important;
+  margin-left:  300px;
+}

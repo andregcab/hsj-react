@@ -1,0 +1,66 @@
+#createSkip{
+  background-image: url('/images/modalImage.jpeg');
+  background-size: cover !important;
+  max-height: 90% !important;
+  width: 80% !important;
+}
+
+#createSkip h3{
+   text-align: center;
+}
+
+.createNewSkip{
+  background-color: #4CAF50 !important;
+}
+.createSkipContent{
+  padding: 106px 230px !important;
+}
+
+.addSkip{
+  margin-left: 250px;
+  background-color: #4CAF50 !important;
+}
+.createSkip-input-field input[type=text]:focus {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+   /* valid color */
+   .createSkip-input-field input[type=text].valid {
+    border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0  #4caf50 !important;
+  }
+  /* invalid color */
+  .createSkip-input-field input[type=text].invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 #000;
+  }
+   /* label focus color */
+   .createSkip-input-field input[type=text]:focus + label {
+    color: #4caf50 !important;
+  }
+  
+  /* label underline focus color */
+  .createSkip-input-field input[type=text]:focus {
+    border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4caf50 !important;
+  }
+
+  .dropdown-content li>span {
+    font-size: 16px !important;
+    color: black !important;
+  }
+
+  .createSkip-input-field[type=number].valid{
+    border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4CAF50 !important;
+  } 
+
+.descriptionTextArea:focus {
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4CAF50 !important;
+}
+
+.materialize-textarea:focus + label{
+  color: #4CAF50 !important;
+}

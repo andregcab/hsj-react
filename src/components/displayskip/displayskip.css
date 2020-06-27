@@ -1,0 +1,89 @@
+@import url("https://use.typekit.net/wlf2zut.css");
+
+.allUserSkip{
+  display: flex;
+  justify-content: center;
+}
+
+.eachskip {
+  /* border-right: 1px solid #4caf50; */
+  border-right: 3px solid ;
+  /* border-bottom: 5px solid #4caf50; */
+  text-align: center;
+  width: 480px;
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  margin-right: 437px;
+  /* height: 550px; */
+}
+
+.skipDisplayRight {
+  border-left: 3px solid black;
+  /* border-bottom: 5px solid #4caf50; */
+  text-align: center;
+  width: 450px;
+  display: flex;
+  /* justify-content: flex-end; */
+  margin-left: 488px;
+  flex-direction: column;
+  /* margin-top: 20px; */
+  margin-bottom: -20px;
+}
+
+
+.editLocation{
+  font-size: 30px !important;
+}
+.editSkipBtn{
+  text-align: center;
+  color: #4caf50;
+  width: 112px;
+}
+
+.deleteSkip{
+  color: #4caf50 !important;
+  font-size: 30px !important;
+}
+
+.eachskip h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 80px;
+}
+
+.editDeleteButtons{
+  /* display: flex; */
+  margin-left: 377px;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  background: #4caf50;
+  margin-top: 136px;
+  /* z-index: 10189; */
+  margin-left: 468px;
+}
+
+.eachskip h4 {
+  margin-top: -20px !important;
+}
+.skipDisplayRight h4{
+ margin-top: -20px;
+}
+
+ .markerRight {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #4caf50;
+    /* margin-top: 246px; */
+    /* z-index: 10189; */
+    margin-left: -12px;
+}
+

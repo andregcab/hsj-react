@@ -1,0 +1,51 @@
+.editJump {
+  margin-top: 2px;
+  background-image: url(/images/modalImage.jpeg);
+  background-size: cover;
+  height: 700px;
+}
+
+.jumpFormContent h3{
+  display: flex;
+  justify-content: center;
+}
+
+.jumpFormContent {
+  padding: 135px 170px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .editJumpField .input[type=text]:focus{
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+} */
+
+.input.editJumpField::before{
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+.input.editJumpField:focus{
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+.input.editJumpField:focus:not{
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+.input[type=text]:not{
+  border-bottom: 1px solid #4caf50 !important;
+  box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+.saveEditJump{
+  display: flex;
+  justify-content: center;
+  background-color: #4caf50 !important;
+  margin-left: 300px;
+}

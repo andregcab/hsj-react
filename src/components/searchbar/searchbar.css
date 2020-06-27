@@ -1,0 +1,9 @@
+.search-bar{
+  width: 75vw;
+  display: flex;
+  margin-left: 240px;
+}
+
+.inputtest{
+  align-self: center;
+}
