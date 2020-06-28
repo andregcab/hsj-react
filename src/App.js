@@ -3,7 +3,7 @@ import "./App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
 import AuthService from "./services/AuthService.js";
 import Navbar from "./components/navbar/Navbar.js";
-import HomePage from "./components/homepage/HomePage.js";
+import HomePage from "./components/homepage/HomePage.jsx";
 import UserHomePage from "./components/userhomepage/UserHomepage.js";
 import AllUserJumps from "./components/alluserjumps/AllUserJumps.js";
 import CreateJump from "./components/createjump/CreateJump.js";
@@ -20,7 +20,7 @@ class App extends Component {
     super(props);
     this.state = {
       currentlyLoggedIn: null,
-      ready: false
+      ready: false,
     };
     //this is important! it gets the AuthService class from Authservice.js
     //basically it allows us to use the signup/login/getcurrentuser/logout routes from
@@ -28,10 +28,10 @@ class App extends Component {
     this.service = new AuthService();
   }
 
-  getCurrentlyLoggedInUser = f => {
+  getCurrentlyLoggedInUser = (f) => {
     this.service
       .currentUser()
-      .then(theUser => {
+      .then((theUser) => {
         this.setState({ currentlyLoggedIn: theUser }, () => {
           if (f) {
             f();
@@ -52,7 +52,7 @@ class App extends Component {
       <div className="App">
         <Route
           path="/"
-          render={props => (
+          render={(props) => (
             <Navbar
               {...props}
               theUser={this.state.currentlyLoggedIn}
@@ -67,14 +67,14 @@ class App extends Component {
           <Route
             exact
             path="/"
-            render={props => (
+            render={(props) => (
               <HomePage {...props} theUser={this.state.currentlyLoggedIn} />
             )}
           />
           <Route
             exact
             path="/userHomepage"
-            render={props => {
+            render={(props) => {
               if (this.state.currentlyLoggedIn)
                 return (
                   <UserHomePage
@@ -89,7 +89,7 @@ class App extends Component {
           <Route
             exact
             path="/allUserJumps"
-            render={props => (
+            render={(props) => (
               <AllUserJumps
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -100,7 +100,7 @@ class App extends Component {
           <Route
             exact
             path="/viewJump/:id"
-            render={props => (
+            render={(props) => (
               <ViewJump
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -111,7 +111,7 @@ class App extends Component {
           <Route
             exact
             path="/createJump"
-            render={props => (
+            render={(props) => (
               <CreateJump
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -122,7 +122,7 @@ class App extends Component {
           <Route
             exact
             path="/allJumps"
-            render={props => (
+            render={(props) => (
               <AllJumps
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -133,7 +133,7 @@ class App extends Component {
           <Route
             exact
             path="/editJump/:id"
-            render={props => (
+            render={(props) => (
               <EditJump
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -144,7 +144,7 @@ class App extends Component {
           <Route
             exact
             path="/editSkip/:id"
-            render={props => (
+            render={(props) => (
               <EditSkip
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
@@ -155,7 +155,7 @@ class App extends Component {
           <Route
             exact
             path="/editHop/:id"
-            render={props => (
+            render={(props) => (
               <EditHop
                 {...props}
                 theUser={this.state.currentlyLoggedIn}
