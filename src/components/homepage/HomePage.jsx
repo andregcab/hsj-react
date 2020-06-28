@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./homepage.css";
 
-const HomePage = (props) => {
+const HomePage = () => {
   return (
     <div>
       <header id="navOverlay" className="navHeader"></header>
