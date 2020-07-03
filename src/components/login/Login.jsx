@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from "react";
-import AuthService from "../../services/AuthService";
-import "materialize-css";
+import React, { useState } from "react";
 import { Modal, Button } from "react-materialize";
+import { useHistory } from "react-router-dom";
+import AuthService from "../../services/AuthService";
+
+import "materialize-css";
 import "./login.css";
 
-const Login = ({ getUser, history }) => {
-  const [usernameInput, setUsernameInput] = useState("");
-  const [passwordInput, setPasswordInput] = useState("");
+const Login = ({ getUser }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const service = new AuthService();
+  const history = useHistory();
 
-  const tryToLogin = (e) => {
+  const login = (e) => {
     e.preventDefault();
-    const uName = usernameInput;
-    const pWord = passwordInput;
-    service.login(uName, pWord).then(() => {
+    service.login(username, password).then(() => {
       getUser(() => {
         history.push("/userHomepage");
       });
@@ -27,7 +28,7 @@ const Login = ({ getUser, history }) => {
       </Button>
       <Modal id="loginModal">
         <h5>Login</h5>
-        <form onSubmit={tryToLogin}>
+        <form onSubmit={login}>
           <div className="login-input-field input-field col s6">
             <i className="material-icons prefix">account_circle</i>
             <input
@@ -35,9 +36,9 @@ const Login = ({ getUser, history }) => {
               type="text"
               className="validate"
               autoComplete="username"
-              value={usernameInput}
+              value={username}
               name="usernameInput"
-              onChange={(e) => setUsernameInput(e.target.value)}
+              onChange={(event) => setUsername(event.target.value)}
             />
             <label htmlFor="loginIcon">First Name</label>
           </div>
@@ -49,9 +50,9 @@ const Login = ({ getUser, history }) => {
               type="password"
               className="validate"
               autoComplete="current-password"
-              value={passwordInput}
+              value={password}
               name="passwordInput"
-              onChange={(e) => setPasswordInput(e.target.value)}
+              onChange={(event) => setPassword(event.target.value)}
             />
             <label htmlFor="icon_lock">Password</label>
           </div>
